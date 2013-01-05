@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Orc::Action::Base</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../lib/orc/actions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/orc/actions.rb">lib/orc/actions.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-check_valid">#check_valid</a></li>
+          
+          <li><a href="#method-i-complete-3F">#complete?</a></li>
+          
+          <li><a href="#method-i-default_timeout">#default_timeout</a></li>
+          
+          <li><a href="#method-i-execute">#execute</a></li>
+          
+          <li><a href="#method-i-failed-3F">#failed?</a></li>
+          
+          <li><a href="#method-i-group_name">#group_name</a></li>
+          
+          <li><a href="#method-i-host">#host</a></li>
+          
+          <li><a href="#method-i-key">#key</a></li>
+          
+          <li><a href="#method-i-timeout-3F">#timeout?</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Included Modules -->
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><a class="include" href="../../Progress.html">Progress</a></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../Orc.html">Orc</a></li>
+        
+          <li><a href="../../Orc/Action.html">Orc::Action</a></li>
+        
+          <li><a href="../../Orc/Action/Base.html">Orc::Action::Base</a></li>
+        
+          <li><a href="../../Orc/Action/DisableParticipationAction.html">Orc::Action::DisableParticipationAction</a></li>
+        
+          <li><a href="../../Orc/Action/EnableParticipationAction.html">Orc::Action::EnableParticipationAction</a></li>
+        
+          <li><a href="../../Orc/Action/ResolvedCompleteAction.html">Orc::Action::ResolvedCompleteAction</a></li>
+        
+          <li><a href="../../Orc/Action/UpdateVersionAction.html">Orc::Action::UpdateVersionAction</a></li>
+        
+          <li><a href="../../Orc/Action/WaitActionBase.html">Orc::Action::WaitActionBase</a></li>
+        
+          <li><a href="../../Orc/Action/WaitForDrainedAction.html">Orc::Action::WaitForDrainedAction</a></li>
+        
+          <li><a href="../../Orc/Action/WaitForHealthyAction.html">Orc::Action::WaitForHealthyAction</a></li>
+        
+          <li><a href="../../Orc/Config.html">Orc::Config</a></li>
+        
+          <li><a href="../../Orc/Engine.html">Orc::Engine</a></li>
+        
+          <li><a href="../../Orc/Exception.html">Orc::Exception</a></li>
+        
+          <li><a href="../../Orc/Exception/FailedToResolve.html">Orc::Exception::FailedToResolve</a></li>
+        
+          <li><a href="../../Orc/Exception/GroupMissing.html">Orc::Exception::GroupMissing</a></li>
+        
+          <li><a href="../../Orc/Exception/Timeout.html">Orc::Exception::Timeout</a></li>
+        
+          <li><a href="../../Orc/Factory.html">Orc::Factory</a></li>
+        
+          <li><a href="../../Orc/MismatchResolver.html">Orc::MismatchResolver</a></li>
+        
+          <li><a href="../../Orc/Model.html">Orc::Model</a></li>
+        
+          <li><a href="../../Orc/Model/Application.html">Orc::Model::Application</a></li>
+        
+          <li><a href="../../Orc/Model/Group.html">Orc::Model::Group</a></li>
+        
+          <li><a href="../../Orc/Model/Instance.html">Orc::Model::Instance</a></li>
+        
+          <li><a href="../../Orc/Util.html">Orc::Util</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser.html">Orc::Util::OptionParser</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/Base.html">Orc::Util::OptionParser::Base</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/DeployRequest.html">Orc::Util::OptionParser::DeployRequest</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/InstallRequest.html">Orc::Util::OptionParser::InstallRequest</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/PromotionRequest.html">Orc::Util::OptionParser::PromotionRequest</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/PullCmdbRequest.html">Orc::Util::OptionParser::PullCmdbRequest</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/ResolveRequest.html">Orc::Util::OptionParser::ResolveRequest</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/StatusRequest.html">Orc::Util::OptionParser::StatusRequest</a></li>
+        
+          <li><a href="../../Orc/Util/OptionParser/SwapRequest.html">Orc::Util::OptionParser::SwapRequest</a></li>
+        
+          <li><a href="../../Orc/Util/Timeout.html">Orc::Util::Timeout</a></li>
+        
+          <li><a href="../../Orc/Util/Timeout/Alarm.html">Orc::Util::Timeout::Alarm</a></li>
+        
+          <li><a href="../../CMDB.html">CMDB</a></li>
+        
+          <li><a href="../../CMDB/ApplicationMissing.html">CMDB::ApplicationMissing</a></li>
+        
+          <li><a href="../../CMDB/Git.html">CMDB::Git</a></li>
+        
+          <li><a href="../../CMDB/HighLevelOrchrestration.html">CMDB::HighLevelOrchrestration</a></li>
+        
+          <li><a href="../../CMDB/Yaml.html">CMDB::Yaml</a></li>
+        
+          <li><a href="../../Client.html">Client</a></li>
+        
+          <li><a href="../../Client/DeployClient.html">Client::DeployClient</a></li>
+        
+          <li><a href="../../Client/FailedDeployment.html">Client::FailedDeployment</a></li>
+        
+          <li><a href="../../MCollective.html">MCollective</a></li>
+        
+          <li><a href="../../MCollective/RPC.html">MCollective::RPC</a></li>
+        
+          <li><a href="../../MCollective/RPC/DeploytoolWrapper.html">MCollective::RPC::DeploytoolWrapper</a></li>
+        
+          <li><a href="../../Progress.html">Progress</a></li>
+        
+          <li><a href="../../Progress/Logger.html">Progress::Logger</a></li>
+        
+          <li><a href="../../AnsiStatusRenderer.html">AnsiStatusRenderer</a></li>
+        
+          <li><a href="../../Color.html">Color</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Orc::Action::Base</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="instance-attribute-method" class="method-detail">
+          <a name="instance"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">instance</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(remote_client, instance, timeout=nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">remote_client</span>, <span class="ruby-identifier">instance</span>, <span class="ruby-identifier">timeout</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-ivar">@instance</span> = <span class="ruby-identifier">instance</span>
+  <span class="ruby-ivar">@remote_client</span> = <span class="ruby-identifier">remote_client</span>
+  <span class="ruby-ivar">@timeout</span> = <span class="ruby-identifier">timeout</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">default_timeout</span>
+  <span class="ruby-ivar">@failed</span> = <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="check_valid-method" class="method-detail ">
+          <a name="method-i-check_valid"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">check_valid</span><span
+              class="method-args">(application_model)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="check_valid-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">check_valid</span>(<span class="ruby-identifier">application_model</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- check_valid-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- check_valid-method -->
+
+      
+        <div id="complete-3F-method" class="method-detail ">
+          <a name="method-i-complete-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">complete?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="complete-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">complete?</span>
+  <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- complete-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- complete-3F-method -->
+
+      
+        <div id="default_timeout-method" class="method-detail ">
+          <a name="method-i-default_timeout"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">default_timeout</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="default_timeout-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">default_timeout</span>
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- default_timeout-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- default_timeout-method -->
+
+      
+        <div id="execute-method" class="method-detail ">
+          <a name="method-i-execute"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">execute</span><span
+              class="method-args">(all_actions)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="execute-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">execute</span>(<span class="ruby-identifier">all_actions</span>)
+  <span class="ruby-identifier">status</span> = <span class="ruby-identifier">do_execute</span>(<span class="ruby-identifier">all_actions</span>.<span class="ruby-identifier">clone</span>) <span class="ruby-comment"># clone to stop do_execute methods from being able to permute previous actions</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">status</span>
+    <span class="ruby-ivar">@failed</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">status</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- execute-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- execute-method -->
+
+      
+        <div id="failed-3F-method" class="method-detail ">
+          <a name="method-i-failed-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">failed?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="failed-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">failed?</span>
+  <span class="ruby-ivar">@failed</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- failed-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- failed-3F-method -->
+
+      
+        <div id="group_name-method" class="method-detail ">
+          <a name="method-i-group_name"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">group_name</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="group_name-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">group_name</span>
+  <span class="ruby-ivar">@instance</span>.<span class="ruby-identifier">group_name</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- group_name-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- group_name-method -->
+
+      
+        <div id="host-method" class="method-detail ">
+          <a name="method-i-host"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">host</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="host-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">host</span>
+  <span class="ruby-ivar">@instance</span>.<span class="ruby-identifier">host</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- host-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- host-method -->
+
+      
+        <div id="key-method" class="method-detail ">
+          <a name="method-i-key"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">key</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="key-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">key</span>
+  <span class="ruby-ivar">@instance</span>.<span class="ruby-identifier">key</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- key-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- key-method -->
+
+      
+        <div id="timeout-3F-method" class="method-detail ">
+          <a name="method-i-timeout-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">timeout?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="timeout-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/actions.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">timeout?</span>
+  <span class="ruby-operator">!</span> <span class="ruby-ivar">@timeout</span>.<span class="ruby-identifier">nil?</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- timeout-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- timeout-3F-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

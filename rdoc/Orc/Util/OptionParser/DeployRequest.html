@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Orc::Util::OptionParser::DeployRequest</title>
+
+  <link rel="stylesheet" href="../../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../../index.html">Home</a>
+          <a href="../../../index.html#classes">Classes</a>
+          <a href="../../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../../lib/orc/util/option_parser_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/orc/util/option_parser.rb">lib/orc/util/option_parser.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="Base.html">Orc::Util::OptionParser::Base</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-command_options">::command_options</a></li>
+          
+          <li><a href="#method-i-execute">#execute</a></li>
+          
+          <li><a href="#method-i-required">#required</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../../Orc.html">Orc</a></li>
+        
+          <li><a href="../../../Orc/Action.html">Orc::Action</a></li>
+        
+          <li><a href="../../../Orc/Action/Base.html">Orc::Action::Base</a></li>
+        
+          <li><a href="../../../Orc/Action/DisableParticipationAction.html">Orc::Action::DisableParticipationAction</a></li>
+        
+          <li><a href="../../../Orc/Action/EnableParticipationAction.html">Orc::Action::EnableParticipationAction</a></li>
+        
+          <li><a href="../../../Orc/Action/ResolvedCompleteAction.html">Orc::Action::ResolvedCompleteAction</a></li>
+        
+          <li><a href="../../../Orc/Action/UpdateVersionAction.html">Orc::Action::UpdateVersionAction</a></li>
+        
+          <li><a href="../../../Orc/Action/WaitActionBase.html">Orc::Action::WaitActionBase</a></li>
+        
+          <li><a href="../../../Orc/Action/WaitForDrainedAction.html">Orc::Action::WaitForDrainedAction</a></li>
+        
+          <li><a href="../../../Orc/Action/WaitForHealthyAction.html">Orc::Action::WaitForHealthyAction</a></li>
+        
+          <li><a href="../../../Orc/Config.html">Orc::Config</a></li>
+        
+          <li><a href="../../../Orc/Engine.html">Orc::Engine</a></li>
+        
+          <li><a href="../../../Orc/Exception.html">Orc::Exception</a></li>
+        
+          <li><a href="../../../Orc/Exception/FailedToResolve.html">Orc::Exception::FailedToResolve</a></li>
+        
+          <li><a href="../../../Orc/Exception/GroupMissing.html">Orc::Exception::GroupMissing</a></li>
+        
+          <li><a href="../../../Orc/Exception/Timeout.html">Orc::Exception::Timeout</a></li>
+        
+          <li><a href="../../../Orc/Factory.html">Orc::Factory</a></li>
+        
+          <li><a href="../../../Orc/MismatchResolver.html">Orc::MismatchResolver</a></li>
+        
+          <li><a href="../../../Orc/Model.html">Orc::Model</a></li>
+        
+          <li><a href="../../../Orc/Model/Application.html">Orc::Model::Application</a></li>
+        
+          <li><a href="../../../Orc/Model/Group.html">Orc::Model::Group</a></li>
+        
+          <li><a href="../../../Orc/Model/Instance.html">Orc::Model::Instance</a></li>
+        
+          <li><a href="../../../Orc/Util.html">Orc::Util</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser.html">Orc::Util::OptionParser</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/Base.html">Orc::Util::OptionParser::Base</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/DeployRequest.html">Orc::Util::OptionParser::DeployRequest</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/InstallRequest.html">Orc::Util::OptionParser::InstallRequest</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/PromotionRequest.html">Orc::Util::OptionParser::PromotionRequest</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/PullCmdbRequest.html">Orc::Util::OptionParser::PullCmdbRequest</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/ResolveRequest.html">Orc::Util::OptionParser::ResolveRequest</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/StatusRequest.html">Orc::Util::OptionParser::StatusRequest</a></li>
+        
+          <li><a href="../../../Orc/Util/OptionParser/SwapRequest.html">Orc::Util::OptionParser::SwapRequest</a></li>
+        
+          <li><a href="../../../Orc/Util/Timeout.html">Orc::Util::Timeout</a></li>
+        
+          <li><a href="../../../Orc/Util/Timeout/Alarm.html">Orc::Util::Timeout::Alarm</a></li>
+        
+          <li><a href="../../../CMDB.html">CMDB</a></li>
+        
+          <li><a href="../../../CMDB/ApplicationMissing.html">CMDB::ApplicationMissing</a></li>
+        
+          <li><a href="../../../CMDB/Git.html">CMDB::Git</a></li>
+        
+          <li><a href="../../../CMDB/HighLevelOrchrestration.html">CMDB::HighLevelOrchrestration</a></li>
+        
+          <li><a href="../../../CMDB/Yaml.html">CMDB::Yaml</a></li>
+        
+          <li><a href="../../../Client.html">Client</a></li>
+        
+          <li><a href="../../../Client/DeployClient.html">Client::DeployClient</a></li>
+        
+          <li><a href="../../../Client/FailedDeployment.html">Client::FailedDeployment</a></li>
+        
+          <li><a href="../../../MCollective.html">MCollective</a></li>
+        
+          <li><a href="../../../MCollective/RPC.html">MCollective::RPC</a></li>
+        
+          <li><a href="../../../MCollective/RPC/DeploytoolWrapper.html">MCollective::RPC::DeploytoolWrapper</a></li>
+        
+          <li><a href="../../../Progress.html">Progress</a></li>
+        
+          <li><a href="../../../Progress/Logger.html">Progress::Logger</a></li>
+        
+          <li><a href="../../../AnsiStatusRenderer.html">AnsiStatusRenderer</a></li>
+        
+          <li><a href="../../../Color.html">Color</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Orc::Util::OptionParser::DeployRequest</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="command_options-method" class="method-detail ">
+          <a name="method-c-command_options"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">command_options</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="command_options-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/util/option_parser.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">command_options</span>
+  [<span class="ruby-string">'-d'</span>,<span class="ruby-string">'--deploy'</span>,<span class="ruby-string">'changes the cmdb - does an install followed by a swap'</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- command_options-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- command_options-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="execute-method" class="method-detail ">
+          <a name="method-i-execute"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">execute</span><span
+              class="method-args">(factory)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="execute-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/util/option_parser.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">execute</span>(<span class="ruby-identifier">factory</span>)
+  <span class="ruby-identifier">factory</span>.<span class="ruby-identifier">high_level_orchestration</span>.<span class="ruby-identifier">deploy</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:version</span>])
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- execute-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- execute-method -->
+
+      
+        <div id="required-method" class="method-detail ">
+          <a name="method-i-required"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">required</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="required-source">
+<pre>
+<span class="ruby-comment"># File lib/orc/util/option_parser.rb, line 60</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">required</span>
+  <span class="ruby-keyword">return</span> [<span class="ruby-value">:environment</span>,<span class="ruby-value">:application</span>,<span class="ruby-value">:version</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- required-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- required-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

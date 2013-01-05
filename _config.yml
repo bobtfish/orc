@@ -1,0 +1,22 @@
+# standard jekyll configuration
+
+permalink: date
+pygments: true
+exclude: ['Rakefile', 'README.md']
+markdown: rdiscount
+
+# configuration required for some pages
+
+domain: https://github.com/youdevise/orc
+title: Orc
+author: Tomas Doran
+email: infra@timgroup.com
+
+# configuration for ehancements, uncomment to enable
+
+# google_analytics:
+#   account: UA-XXXXX-X
+
+github:
+   username: youdevise
+
