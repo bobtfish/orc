@@ -7,7 +7,7 @@ markdown: rdiscount
 
 # configuration required for some pages
 
-domain: https://github.com/youdevise/orc
+domain: http://youdevise.github.com/orc/
 title: Orc
 author: Tomas Doran
 email: infra@timgroup.com
