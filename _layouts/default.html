@@ -14,7 +14,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" media="screen" href="/orc/stylesheets/styles.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="{{ site.path_prefix }}/stylesheets/styles.css" type="text/css" />
     {% if site.google_analytics %}
     <!-- google analytics async -->
     <script type="text/javascript">
@@ -35,9 +35,9 @@
       <div class="navbar-inner">
         <nav class="container">
           <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/rdoc">RDoc</a></li>
+            <li><a href="{{ site.path_prefix }}/">Home</a></li>
+            <li><a href="{{ site.path_prefix }}/about.html">About</a></li>
+            <li><a href="{{ site.path_prefix }}/rdoc">RDoc</a></li>
           </ul>
           <form method="get" action="http://www.google.com/search" class="navbar-search pull-right">
             <input type="text" name="q" class="span2 search-query" placeholder="Search" maxlength="255" value="">
